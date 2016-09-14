@@ -33,6 +33,12 @@ Add Crosswalk dependent recipes as supported recipes by adding
 SUPPORTED_RECIPES_append = " /path/to/meta-crosswalk/include/ostro-xt-supported-recipes.txt"
 ```
 
+Add production and development images by adding
+```bitbake
+require conf/distro/include/ostro-os-development.inc
+require conf/distro/include/ostro-os-production.inc
+```
+
 Install Crosswalk into Ostro™ OS XT image by adding
 ```bitbake
 OSTRO_XT_IMAGE_EXTRA_INSTALL_append = " crosswalk"
